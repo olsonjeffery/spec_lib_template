@@ -1,0 +1,20 @@
+[package]
+name = "spec_lib_template"
+version = "0.0.1"
+authors = [""]
+edition = "2021"
+license = "??"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.68" }
+
+[dev-dependencies]
+futures = "0.3"
+chrono = "0.4"
+cucumber = { version = "0.19.1", features = ["output-json"] }
+
+[[test]]
+name = "specs"
+harness = false
